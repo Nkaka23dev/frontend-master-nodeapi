@@ -1,11 +1,11 @@
-const express = require('express');
+import express from "express";
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', (req: any, res: any) => {
     res.status = 200;
     res.json({ "Name": "Eric Nkaka" });
     res.end()
 });
 
-module.exports = app;
+export default app;
